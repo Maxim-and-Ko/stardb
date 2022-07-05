@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;500&display=swap');
+html
+{
+    background: #1E1E1E;
+}
+.mainbody
+{
+    padding-left: 80px;
+    height: 100%;
+    width: 1440px;
+    margin: 0 auto;
+}
+.header {
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.naviElement
+{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+.naviElement:hover
+{
+    color: #E2F063;
+    text-decoration-line: underline;
+}
+.active {
+    
+    background: rgb(226, 240, 99,0.1);
+    border-radius: 5px;
+}
+.text
+{
+font-family: 'Exo', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+color: #fff;
+}
+.gradientbg
+{
+    background: linear-gradient(90deg, #8B39B2 0%, #E2F063 100%);
+opacity: 0.6;
+filter: blur(200px);
+width: 100%;
+height: 240px;
+
+}
+.headText
+{
+font-family: 'Exo', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 70px;
+
+
+color: #E2F063;
+}
+.card
+{
+    background: #fff;
+    border-radius: 10px;
+    width: 347px;
+    height: auto;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    padding: 19px;
+    font-family: 'Exo', sans-serif;
+    transition: 0.5s;
+    cursor:pointer;
+}
+.card img
+{
+    width:100%;
+    border-radius: 10px;
+    background: gray;
+}
+.card:hover
+{
+    transform: scale(1.1);
+    
+}
+.starslist
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.grayText
+{
+    font-size:23px;
+    font-weight: 300;
+    color: #1E1E1E;
+}
+.whiteText
+{
+    font-size:28px;
+    font-weight: 300;
+    color: #fff;
+    margin-right: 116px;
+}
+.boldText
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:27px;
+    font-weight: 500;
+    color: #1E1E1E;
+    margin-top: 19px;
+}
+.boldText2
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:40px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 19px;
+
+}
+.shipInfo img
+{
+    width: 624px;
+    border-radius: 10px;
+}
+.shipInfo
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+}
+.shipData
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    color: #fff;
+}
+.mobNavi
+{
+    display:none;
+    padding: 7px;
+}
+.mobMenu
+{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #1E1E1E;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 100;
+}
+.showed .mobMenu
+{
+    display:block;
+}
+.mobMenuContent
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    
+}
+.mobMenuContent .naviElement
+{
+font-size: 60px;
+}
+.searchInp
+{
+    font-family: 'Exo', sans-serif;
+    font-size: 18px;
+    margin-bottom: 50px;
+    padding:5px;
+    border-radius: 15px;
+}
+@media (max-width: 360px) {
+  .mainbody
+  {
+    width: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .header
+  {
+    padding: 20px 0 0 10px;
+  }
+  .headText
+  {
+    font-size: 40px;
+  }
+  .text
+  {
+    font-size: 20px;
+  }
+  .gradientbg
+  {
+    position:absolute;
+    top:200px;
+    width: 340px;
+  }
+  .mobNavi
+  {
+
+    display:block;
+  }
+  .navi
+  {
+    display:none;
+  }
+  .boldText
+  {
+    font-size:22px;
+  }
+  .grayText
+  {
+    font-size:20px;
+  }
+  .shipInfo
+  {
+    display:block;
+  }
+  .shipInfo img
+{
+    width: 340px;
+}
+.shipData
+{
+    margin-left: 10px;
+}
+.boldText2
+{
+    font-size:30px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.whiteText
+{
+    font-size:24px;
+}
+}
